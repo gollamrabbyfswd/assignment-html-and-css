@@ -1,0 +1,1134 @@
+/* বেসিক রিসেট */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* বডির মূল স্টাইল */
+body {
+    width: 1440px;
+    height:498px;
+    /* background-color: #F3FCF7; */
+    background-color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* হেডার */
+.navbar {
+    /* width: 1440px;
+    height: 500px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #F3FCF7; */
+    background-color: white;
+    padding: 20px 60px;
+    height: 80px;
+}
+
+/* বাম দিকের লোগো */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #06C167;
+}
+
+/* ডান দিকের মেনু */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu ul li a.green-text {
+    color: #06C167;
+}
+
+.menu ul li a:hover {
+    opacity: 0.7;
+}
+
+/* নিচের দুটি সেকশন (ইমেজের জন্য স্থান) */
+.section1, .section2 {
+    height: 359px;
+    background-color: #EAF7F0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 16px;
+        padding: 8px 0;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+}
+
+.main{
+display: flex;
+}
+.section1{
+    flex-basis: 50%;
+}
+
+
+.section1 h1{
+        
+        font-size: 43px;
+    margin-top: 80px;
+    margin-left: 54px;
+}
+.section1 p{
+        margin-top: 20px;
+    margin-left: 54px;
+    color: rgb(103, 109, 106);
+}
+.button1 a{
+      margin-top: 20px;
+      margin-left: 54px;
+      font-size: 14px;
+      color: white;
+      /* padding-left: 40px; */
+      background-color:#06C167;
+      text-decoration: none;
+      padding: 18px 40px;
+      display: inline-block;
+      margin-top: 21px;
+}
+ .imagefirst{
+margin-top: 100px;
+margin-left: 54px;
+ }
+
+ .section2{
+
+ flex-basis: 50%;
+
+  position: relative;
+ }
+ 
+ .image1{
+
+ }
+ 
+ 
+  .image2{
+  position: absolute;
+     top: 280px;
+    right: 177px;
+  
+   
+ }
+.image2::after{
+ content: "Good Quality Product";
+ background-color: #FFFFFF;
+ font-size: 11px;
+ padding: 20px 53px;
+ border-radius: 30px;
+ 
+
+ 
+} 
+ 
+
+
+ .image3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+ }
+
+ 
+/* notice */
+
+
+/* <!-- secend section strt this position  */ */
+
+.main-two-section{
+width: 800px;
+height: 700px;  
+background-color: #FFFFFF;
+
+
+  
+}
+
+ .two-one{
+  
+display: flex;
+margin-top: 300px;
+justify-content: center;
+
+ }
+
+
+.main-two-section.image-one {
+
+}
+.image-one{
+
+    padding: 0px 10px;
+
+
+}
+.two-tex h3{
+font-size: 10px;
+color: rgb(100, 92, 92);
+margin-top: 10px;
+
+
+}
+.two-tex p{
+font-size: 7px;
+color: #F3FCF7;
+
+margin-top: 10px;
+
+
+} */
+
+/* add secend section icon desogn */
+
+
+/* এই feature-area সম্পূর্ণ সেকশনটিকে আলাদা রাখবে */
+
+
+ /* third section start this position  */
+/* container: horizontal, centered, no wrap */
+.container {
+    display: flex;
+    justify-content: center; /* horizontal centered */
+    align-items: flex-start; /* vertical top aligned */
+    gap: 40px;
+    flex-wrap: nowrap; /* কখনও wrap হবে না */
+}
+
+/* image section */
+.image-section {
+    width: 350px;
+    height: 500px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* text section */
+.text-section {
+    width: 350px;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-section h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-section ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-section ul li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
+
+/* other code */
+/* Container */
+/* Container */
+.text-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* পুরো সেকশন সেন্টারে */
+}
+
+/* H5 Styling */
+.text-section h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sentence Styling */
+.text-section .sentence {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Tick List Styling */
+.text-section .tick-list {
+    list-style: none; /* ডিফল্ট বুলেট সরানো */
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block; /* সেন্টার করার জন্য ব্লক */
+    text-align: left; /* লিস্ট আইটেম লেফটে থাকবে */
+}
+
+/* List Item */
+.text-section .tick-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+        color: #707070
+}
+
+/* Tick Icon */
+.text-section .tick-icon {
+       color: green;
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+
+/* forth sextion css position */
+
+/*========================
+  Parent Flex Container
+========================*/
+.flex-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+        margin: 263px auto;
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    flex-wrap: wrap; /* ছোট স্ক্রিনে নিচে নামতে পারে */
+}
+
+/*========================
+  Text Section (Alpha)
+========================*/
+.text-section-unique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding: 30px 20px;
+    /* border: 2px solid #06C167; */
+    text-align: center;
+}
+
+.text-section-s5 {
+       font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 238px;
+    margin-bottom: 16px;;
+}
+
+.text-section-h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.text-section-numbers {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    /* display: inline-block; */
+    
+
+}
+
+.text-section-numbers div {
+        font-size: 24px;
+    font-weight: bold;
+    color: #06C167;
+    margin-right: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.text-section-btn {
+     padding: 11px 28px;
+    background-color: #06C167;
+    color: white;
+    /* border: none; */
+    /* border-radius: 5px; */
+    cursor: pointer;
+    margin-right: 106px;
+}
+
+.text-section-btn:hover {
+    background-color: #049954;
+}
+
+/*========================
+  Image Section (Beta)
+========================*/
+.image-section-unique {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding: 20px;
+    /* border: 2px solid #FF5733; */
+}
+
+
+.image-section-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*========================
+  Responsive
+========================*/
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text-section-unique, .image-section-unique {
+        max-width: 90%;
+    }
+}
+
+
+
+/* double four */
+
+
+.text-section-unique ul li {
+  list-style: none;
+      margin-right: 100px;
+}
+
+.tick-icon{
+  
+color: #049954;
+font-size: 20px;
+font-weight: bold;
+
+
+}
+
+/*========================
+  Parent Flex Container
+========================*/
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+        margin: 263px auto;
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    flex-wrap: wrap; /* ছোট স্ক্রিনে নিচে নামতে পারে */
+}
+
+/*========================
+  Text Section (Alpha)
+========================*/
+.text-section-unique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding: 30px 20px;
+    /* border: 2px solid #06C167; */
+    text-align: center;
+}
+
+.text-section-s5 {
+       font-size: 12px;
+    margin-bottom: 10px;
+    margin-right: 238px;
+    margin-bottom: 16px;;
+}
+
+.text-section-h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.text-section-numbers {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    /* display: inline-block; */
+    
+
+}
+
+.text-section-numbers div {
+        font-size: 24px;
+    font-weight: bold;
+    color: #06C167;
+    margin-right: 33px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.text-section-btn {
+     padding: 11px 28px;
+    background-color: #06C167;
+    color: white;
+    /* border: none; */
+    /* border-radius: 5px; */
+    cursor: pointer;
+    margin-right: 106px;
+}
+
+.text-section-btn:hover {
+    background-color: #049954;
+}
+
+/*========================
+  Image Section (Beta)
+========================*/
+.image-section-unique {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    padding: 20px;
+    /* border: 2px solid #FF5733; */
+}
+
+
+.image-section-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*========================
+  Responsive
+========================*/
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text-section-unique, .image-section-unique {
+        max-width: 90%;
+    }
+}
+
+
+
+
+ /* fortrh section html position   */
+
+
+ /* Container */
+.text-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* পুরো সেকশন সেন্টারে */
+}
+
+/* H5 Styling */
+.text-section h5 {
+        margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+   
+    margin-left: -122px;
+}
+
+
+/* Sentence Styling */
+.text-section .sentence {
+       display: block;
+    margin-top: 26px;
+    margin-bottom: 35px;
+    font-size: 29px;
+    line-height: 0.7;
+     font-weight: bold;
+}
+
+/* Numbers Section */
+.text-section .numbers {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* সংখ্যাগুলোর মধ্যে ফাঁকা */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* H3 Styling */
+.text-section h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Button and Image Wrapper */
+.text-section .btn-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Button Styling */
+.text-section .action-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #06C167;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.text-section .action-btn:hover {
+    background-color: #05a758;
+}
+
+/* Image Styling */
+.text-section .example-img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .text-section .numbers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .text-section .btn-img-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+ /* six section  html position  */
+
+/* =================== হেডার =================== */
+.wrapperX{
+  background-color:#FFFFFF;
+   
+}
+
+.headerX{
+text-align: center;
+
+}
+.headerX .hx5X {
+  margin-top: 40px;
+  color: #444;
+  font-size: 8px;
+  padding-top: 20px;
+
+}
+
+.headerX .hx1X {
+  margin: 10px 0 30px;
+  color: black;
+  font-size: 40px;
+}
+
+/* =================== প্রথম সারি =================== */
+.rowX1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 40px;
+}
+
+.boxX1, .boxX2, .boxX3, .boxX4 {
+  border: 1px solid rgb(0, 162, 255);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: start;
+   background-color:#F3FCF7;
+}
+
+.boxX2 h2{
+margin-top: 20px;
+text-align: start;
+margin-bottom: 22px;
+}
+
+.boxX2 p{
+margin-top: 10px;
+text-align: start;
+margin-bottom: 12px;
+
+}
+
+.boxX2 button{
+margin-top: 20px;
+text-align: start;
+margin-bottom: 22px;
+}
+
+.boxX4 p{
+margin-top: 10px;
+text-align: start;
+margin-bottom: 12px;
+}
+
+.boxX4 button{
+margin-top: 20px;
+text-align: start;
+margin-bottom: 22px;
+}
+
+
+.boxX5 p{
+margin-top: 10px;
+text-align: start;
+margin-bottom: 12px;
+}
+
+.boxX5 button{
+margin-top: 20px;
+text-align: start;
+margin-bottom: 22px;
+
+}
+
+
+
+.boxX7 p{
+margin-top: 10px;
+text-align: start;
+
+}
+
+.boxX7 button{
+margin-top: 20px;
+text-align: start;
+margin-bottom: 22px;
+
+}
+
+.boxX1 img, .boxX3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* =================== দ্বিতীয় সারি =================== */
+.rowX2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  
+}
+
+.boxX5, .boxX6, .boxX7, .boxX8 {
+ 
+ 
+  padding: 20px;
+  width: 250px;
+  text-align: start;
+   background-color:#F3FCF7;
+   border: 1px solid rgb(0, 162, 255);
+ 
+}
+
+.boxX6 img, .boxX8 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* =================== বাটন =================== */
+button {
+  background: #06C167;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-right: 100px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background: #049a50;
+}
+
+/* =================== রেস্পন্সিভ =================== */
+@media (max-width: 768px) {
+  .rowX1, .rowX2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boxX1, .boxX2, .boxX3, .boxX4,
+  .boxX5, .boxX6, .boxX7, .boxX8 {
+    width: 90%;
+  }
+}
+
+
+
+
+
+ /* seven  section  html position */
+
+ 
+/* Grid Section */
+.grid-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Individual Card */
+.card {
+    /* border: 1px solid #ccc; */
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Stars */
+.card .stars span {
+    color: gold;
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+/* Words Paragraph */
+.card .words {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Price */
+.card .price {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Button */
+.card .btn {
+    padding: 8px 16px;
+    background-color: #06C167;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .btn:hover {
+    background-color: #05a758;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .grid-section {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* last background css position */
+
+
+.bg-section {
+  position: relative;
+  height: 80vh; /* সেকশন নিজস্ব হাইট */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg-section::before {
+  content: "";
+  background-image: url('image/Rectangle\ 8.png');
+  /* background-size: cover; */
+  background-size: contain;
+  background-position: center;
+  filter: blur(1px); /* ব্যাকগ্রাউন্ড ঝাপসা */
+  position: absolute;
+  top: 40px;
+  left: 18%;
+  width: 66%;
+  height: 80%;
+  z-index: 1;
+}
+
+.bg-overlay {
+  background-color: rgba(209, 198, 198, 0.5); /* কালো স্বচ্ছ লেয়ার */
+  position: absolute;
+  top: 40px;
+  left: 18%;
+  width: 66%;
+  height: 80%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.bg-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.bg-button {
+  background-color: #06C167;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.bg-button:hover {
+  background-color: #049d54;
+}
+
+/* রেস্পন্সিভ */
+@media (max-width: 768px) {
+  .bg-title {
+    font-size: 1.5rem;
+  }
+  .bg-button {
+    padding: 10px 20px;
+  }
+}
+
+
+
+ 
+ /* last section  html position  */
+
+/* Footer CSS */
+footer {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* রেস্পন্সিভ জন্য */
+  justify-content: space-between;
+  /* justify-content: start; */
+  background-color: white;
+  /* gap: 30px; */
+}
+/* 
+.footer-section .section1{
+
+  justify-content: start;
+} */
+
+.footer-section {
+  flex: 1 1 220px; /* Responsive width */
+  min-width: 220px;
+}
+
+.footer-section img {
+  max-width: 100px;
+  margin-bottom: 15px;
+      margin-left: 58px;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+  margin-top: 15px;
+   color: rgb(142, 142, 143);
+}
+
+.footer-section .icons {
+  display: flex;
+  gap: 15px;
+  margin-left: 52px;
+}
+
+
+.footer-section h1 {
+  margin-bottom: 10px;
+      font-size: 28px;
+}
+
+.footer-section h3 {
+      margin: 18px 11px;
+  font-size: 15px;
+  color: rgb(142, 142, 143);
+}
+
+.footer-section .email-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-section input[type="email"] {
+  flex: 1;
+  padding: 8px;
+}
+
+.section1, .section2 {
+    height: 359px;
+    background-color: white;
+}
+.footer-section button {
+  padding: 8px 12px;
+  background-color: #06C167;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-section button:hover {
+  background-color: #05a85a;
+}
+
+.last-footer{
+  text-align: center;
+    color: rgb(142, 142, 143);
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
